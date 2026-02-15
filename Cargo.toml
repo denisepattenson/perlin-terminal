@@ -1,0 +1,15 @@
+[package]
+name = "perlin-terminal"
+version = "0.1.0"
+edition = "2021"
+description = "Beautiful Perlin noise animation for your terminal"
+license = "MIT"
+
+[dependencies]
+crossterm = "0.28"
+noise = "0.9"
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+lto = true
